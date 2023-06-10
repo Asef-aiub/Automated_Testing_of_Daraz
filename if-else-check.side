@@ -1,0 +1,152 @@
+{
+  "id": "4b0c1de6-175f-402a-8cb0-900796db5ec2",
+  "version": "2.0",
+  "name": "if-else-check",
+  "url": "https://www.random.org/integers/",
+  "tests": [{
+    "id": "8c9030f8-97eb-4dff-ada9-fda3abd31852",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "1be0462b-c532-4100-bb73-d735bf5ee6b3",
+    "name": "if-else-test-case",
+    "commands": [{
+      "id": "a5ca01cf-f9d5-4535-93ca-fd756f97c083",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.random.org/integers/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "25198f3b-875f-4520-8241-b5efc8c0bfcf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77c3f19c-09bd-4f93-bd95-f0e369d5d173",
+      "comment": "",
+      "command": "click",
+      "target": "name=num",
+      "targets": [
+        ["name=num", "name"],
+        ["css=p:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='num']", "xpath:attributes"],
+        ["xpath=//div[@id='invisible']/form/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "911cd2d9-7104-4188-a908-993412afe805",
+      "comment": "",
+      "command": "type",
+      "target": "name=num",
+      "targets": [
+        ["name=num", "name"],
+        ["css=p:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='num']", "xpath:attributes"],
+        ["xpath=//div[@id='invisible']/form/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "83d87f7b-1951-4ecf-8db7-bf48ab695b3e",
+      "comment": "",
+      "command": "click",
+      "target": "name=col",
+      "targets": [
+        ["name=col", "name"],
+        ["css=p:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='col']", "xpath:attributes"],
+        ["xpath=//div[@id='invisible']/form/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1e29944-afa3-49fe-ad75-b49914b9e5f5",
+      "comment": "",
+      "command": "type",
+      "target": "name=col",
+      "targets": [
+        ["name=col", "name"],
+        ["css=p:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='col']", "xpath:attributes"],
+        ["xpath=//div[@id='invisible']/form/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "23e7f50e-5ace-4bce-ae8a-68578b184764",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(10) > input:nth-child(1)",
+      "targets": [
+        ["css=p:nth-child(10) > input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Get Numbers']", "xpath:attributes"],
+        ["xpath=//div[@id='invisible']/form/p[5]/input", "xpath:idRelative"],
+        ["xpath=//p[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "012810c1-8336-4443-8223-a67586076bea",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"invisible\"]/pre",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "c99af61e-94b4-4363-a288-0384036d7687",
+      "comment": "",
+      "command": "echo",
+      "target": "${x}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e04a3a42-2f94-4e07-8178-ce5c47a19441",
+      "comment": "",
+      "command": "if",
+      "target": "${x} < 50",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6bfd1aa-ad1b-478a-b542-4799f895c935",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.aiub.edu/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92bbd25a-be9d-4c6b-8e44-4de75b273f8e",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2dcef30-50c7-495e-924c-2f24555ac7a1",
+      "comment": "",
+      "command": "open",
+      "target": "http://omayo.blogspot.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa3f4215-4feb-437c-8b22-cd8bb0ca8a88",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0deac013-d014-4f57-a2b8-0fe6e5c8b337",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8c9030f8-97eb-4dff-ada9-fda3abd31852"]
+  }],
+  "urls": ["https://www.random.org/integers/"],
+  "plugins": []
+}

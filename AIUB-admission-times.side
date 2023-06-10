@@ -1,0 +1,140 @@
+{
+  "id": "5c2e1d70-c06d-4d3a-ac31-135cf5d0f0d6",
+  "version": "2.0",
+  "name": "AIUB-admission",
+  "url": "https://admission.aiub.edu/",
+  "tests": [{
+    "id": "9d399411-7396-4271-8cf4-ad4bb3ba899c",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "1b8bcff6-510a-462b-bf5c-a6932470ba94",
+    "name": "admission-login-test",
+    "commands": [{
+      "id": "f3698bf4-1830-44cd-a506-cb6061d90635",
+      "comment": "",
+      "command": "times",
+      "target": "5",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b8ed02d-d507-41c9-8345-31d587db436c",
+      "comment": "",
+      "command": "open",
+      "target": "https://admission.aiub.edu/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfa3ea6e-91c5-4064-9a8e-3493a4891a52",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2de47639-cd86-4b8f-a282-da70b373c899",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=UserName", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7b71965-336a-40fb-ae91-71148e174dc4",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=UserName", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "ad812b02-5358-4240-b260-90e97bac8069",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f46877b-375e-4084-958d-da41de78184a",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "6cf6e69e-42b4-42d1-915b-c609f8b468d4",
+      "comment": "",
+      "command": "click",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["css=#login", "css:finder"],
+        ["xpath=//button[@id='login']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab7f4efd-3e1c-4fca-b129-591b5e9ffa95",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-danger:nth-child(3)",
+      "targets": [
+        ["css=.text-danger:nth-child(3)", "css:finder"],
+        ["xpath=//div[2]/small", "xpath:position"],
+        ["xpath=//small[contains(.,'Your username or password is invalid, please try again with the correct username and password.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bab824c-b4cd-4929-a230-84941f898122",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.text-danger:nth-child(3)",
+      "targets": [
+        ["css=.text-danger:nth-child(3)", "css:finder"],
+        ["xpath=//div[2]/small", "xpath:position"],
+        ["xpath=//small[contains(.,'Your username or password is invalid, please try again with the correct username and password.')]", "xpath:innerText"]
+      ],
+      "value": "Your username or password is invalid, please try again with the correct username and password."
+    }, {
+      "id": "cd1d3a5e-e249-4b1d-819d-5834d0bf7149",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e976841f-157a-4ba2-90d8-3202436620e8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9d399411-7396-4271-8cf4-ad4bb3ba899c"]
+  }],
+  "urls": ["https://admission.aiub.edu/"],
+  "plugins": []
+}

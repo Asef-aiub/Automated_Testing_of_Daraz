@@ -1,0 +1,154 @@
+{
+  "id": "e24903be-53a2-40ea-9538-699cd670d575",
+  "version": "2.0",
+  "name": "AIUB-admission",
+  "url": "https://admission.aiub.edu",
+  "tests": [{
+    "id": "7949f394-ac0e-45da-bc29-ffbca113dc5c",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "7f75fd6d-5303-4166-ab44-ff98a0432f03",
+    "name": "login-test",
+    "commands": [{
+      "id": "7ebeff78-c642-4c7c-a4f4-7e62054d9298",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1000",
+      "targets": [],
+      "value": "password"
+    }, {
+      "id": "4e7f5ffa-9b37-49ca-963a-026a2cac867b",
+      "comment": "",
+      "command": "do",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4983298-a8ab-43dc-a29f-4e368236a0f5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8809eb9a-420c-4fb4-8d95-f9fd6c061f44",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5f22caa-68bb-4833-909d-0cbb6d67819e",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=UserName", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd34d7b0-9536-40d5-94ba-e96fda434569",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=UserName", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "a614f573-4743-4a12-8d90-2250aa9adfd7",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca8cb3f2-fc3c-436b-9962-28c6227e29b6",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${password}"
+    }, {
+      "id": "38acd981-fde0-42e6-af2b-a9c208cc1662",
+      "comment": "",
+      "command": "click",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["css=#login", "css:finder"],
+        ["xpath=//button[@id='login']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0769a39d-e3d2-4da4-9746-0a654ace3d3b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-danger:nth-child(3)",
+      "targets": [
+        ["css=.text-danger:nth-child(3)", "css:finder"],
+        ["xpath=//div[2]/small", "xpath:position"],
+        ["xpath=//small[contains(.,'Your username or password is invalid, please try again with the correct username and password.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8884a989-4a7c-4896-817e-b71233203687",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.text-danger:nth-child(3)",
+      "targets": [
+        ["css=.text-danger:nth-child(3)", "css:finder"],
+        ["xpath=//div[2]/small", "xpath:position"],
+        ["xpath=//small[contains(.,'Your username or password is invalid, please try again with the correct username and password.')]", "xpath:innerText"]
+      ],
+      "value": "Your username or password is invalid, please try again with the correct username and password."
+    }, {
+      "id": "801337c4-a08c-4436-8a4d-06fde1b339c0",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${password}+1",
+      "targets": [],
+      "value": "password"
+    }, {
+      "id": "0d30fe63-610a-44d2-93d2-122c5b02fe2e",
+      "comment": "",
+      "command": "repeatIf",
+      "target": "${password} < 2000",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d5751bac-3279-412b-8c52-5c79ddf5fd3a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7949f394-ac0e-45da-bc29-ffbca113dc5c"]
+  }],
+  "urls": ["https://admission.aiub.edu/"],
+  "plugins": []
+}
